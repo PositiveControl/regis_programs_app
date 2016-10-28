@@ -9,7 +9,7 @@
         <!--Sharing-->
         <scene sceneID="9nT-pk-eFp">
             <objects>
-                <viewController id="mJa-eO-KdL" sceneMemberID="viewController">
+                <viewController id="mJa-eO-KdL" customClass="SharingViewController" customModule="MSSE652" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kxo-NF-TyW"/>
                         <viewControllerLayoutGuide type="bottom" id="lbm-lG-e5v"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SharingNotImplemted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-RU-adz">
-                                <frame key="frameInset" minX="42" minY="48" width="168" height="21"/>
+                                <frame key="frameInset" minX="103" minY="61" width="168" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -254,7 +254,7 @@
         <!--Chat-->
         <scene sceneID="GX3-W0-76J">
             <objects>
-                <viewController id="OT2-RM-c4V" sceneMemberID="viewController">
+                <viewController id="OT2-RM-c4V" customClass="ChatViewController" customModule="MSSE652" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RV4-LW-Mfz"/>
                         <viewControllerLayoutGuide type="bottom" id="HFW-8b-iG6"/>
@@ -301,7 +301,7 @@
         <!--Suggestion Box-->
         <scene sceneID="67c-lq-GaR">
             <objects>
-                <viewController id="6oV-P1-yCx" sceneMemberID="viewController">
+                <viewController id="6oV-P1-yCx" customClass="SuggestionBoxViewController" customModule="MSSE652" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="diH-ve-ygk"/>
                         <viewControllerLayoutGuide type="bottom" id="ICo-sy-ATH"/>

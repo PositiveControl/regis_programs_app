@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2C24F6271DC38FBB0059188E /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */; };
 		2C24F6291DC390250059188E /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F6281DC390250059188E /* CoursesTableViewController.swift */; };
+		2C24F62B1DC393810059188E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62A1DC393810059188E /* ChatViewController.swift */; };
+		2C24F62D1DC393AD0059188E /* SuggestionBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62C1DC393AD0059188E /* SuggestionBoxViewController.swift */; };
+		2C24F62F1DC393D80059188E /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62E1DC393D80059188E /* SharingViewController.swift */; };
 		2CB8391B1DC2BE35008FBA8E /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8391A1DC2BE35008FBA8E /* Program.swift */; };
 		2CB8391D1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */; };
 		2CF0966F1DBD9346006856CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0966E1DBD9346006856CF /* AppDelegate.swift */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 		2C24F6281DC390250059188E /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		2C24F62A1DC393810059188E /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		2C24F62C1DC393AD0059188E /* SuggestionBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionBoxViewController.swift; sourceTree = "<group>"; };
+		2C24F62E1DC393D80059188E /* SharingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
 		2CB8391A1DC2BE35008FBA8E /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsTableTableViewController.swift; sourceTree = "<group>"; };
 		2CF0966B1DBD9346006856CF /* MSSE652.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSSE652.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +103,9 @@
 				2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */,
 				2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */,
 				2C24F6281DC390250059188E /* CoursesTableViewController.swift */,
+				2C24F62A1DC393810059188E /* ChatViewController.swift */,
+				2C24F62C1DC393AD0059188E /* SuggestionBoxViewController.swift */,
+				2C24F62E1DC393D80059188E /* SharingViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -303,9 +312,12 @@
 				2CF096711DBD9346006856CF /* ViewController.swift in Sources */,
 				2CF0966F1DBD9346006856CF /* AppDelegate.swift in Sources */,
 				2CB8391B1DC2BE35008FBA8E /* Program.swift in Sources */,
+				2C24F62F1DC393D80059188E /* SharingViewController.swift in Sources */,
 				2C24F6271DC38FBB0059188E /* CourseDetailViewController.swift in Sources */,
 				2CF096771DBD9346006856CF /* MSSE652.xcdatamodeld in Sources */,
+				2C24F62D1DC393AD0059188E /* SuggestionBoxViewController.swift in Sources */,
 				2CF096A81DBD9A7C006856CF /* SecondViewController.swift in Sources */,
+				2C24F62B1DC393810059188E /* ChatViewController.swift in Sources */,
 				2CF096A61DBD9A6B006856CF /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
