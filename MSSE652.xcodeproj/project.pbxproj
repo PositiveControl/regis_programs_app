@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C24F6271DC38FBB0059188E /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */; };
+		2C24F6291DC390250059188E /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F6281DC390250059188E /* CoursesTableViewController.swift */; };
+		2CB8391B1DC2BE35008FBA8E /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8391A1DC2BE35008FBA8E /* Program.swift */; };
+		2CB8391D1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */; };
 		2CF0966F1DBD9346006856CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0966E1DBD9346006856CF /* AppDelegate.swift */; };
 		2CF096711DBD9346006856CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF096701DBD9346006856CF /* ViewController.swift */; };
 		2CF096741DBD9346006856CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF096721DBD9346006856CF /* Main.storyboard */; };
@@ -15,6 +19,8 @@
 		2CF0967C1DBD9346006856CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0967A1DBD9346006856CF /* LaunchScreen.storyboard */; };
 		2CF096871DBD9346006856CF /* MSSE652Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF096861DBD9346006856CF /* MSSE652Tests.swift */; };
 		2CF096921DBD9346006856CF /* MSSE652UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF096911DBD9346006856CF /* MSSE652UITests.swift */; };
+		2CF096A61DBD9A6B006856CF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF096A51DBD9A6B006856CF /* FirstViewController.swift */; };
+		2CF096A81DBD9A7C006856CF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF096A71DBD9A7C006856CF /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		2C24F6281DC390250059188E /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		2CB8391A1DC2BE35008FBA8E /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsTableTableViewController.swift; sourceTree = "<group>"; };
 		2CF0966B1DBD9346006856CF /* MSSE652.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSSE652.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF0966E1DBD9346006856CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CF096701DBD9346006856CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		2CF0968D1DBD9346006856CF /* MSSE652UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSSE652UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF096911DBD9346006856CF /* MSSE652UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSSE652UITests.swift; sourceTree = "<group>"; };
 		2CF096931DBD9346006856CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF096A51DBD9A6B006856CF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		2CF096A71DBD9A7C006856CF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C24F6251DC38F6E0059188E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CF096A51DBD9A6B006856CF /* FirstViewController.swift */,
+				2CF096A71DBD9A7C006856CF /* SecondViewController.swift */,
+				2CF096701DBD9346006856CF /* ViewController.swift */,
+				2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */,
+				2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */,
+				2C24F6281DC390250059188E /* CoursesTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		2CF096621DBD9346006856CF = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +124,9 @@
 		2CF0966D1DBD9346006856CF /* MSSE652 */ = {
 			isa = PBXGroup;
 			children = (
+				2CF0969F1DBD997C006856CF /* Model */,
 				2CF0966E1DBD9346006856CF /* AppDelegate.swift */,
-				2CF096701DBD9346006856CF /* ViewController.swift */,
+				2C24F6251DC38F6E0059188E /* Controller */,
 				2CF096721DBD9346006856CF /* Main.storyboard */,
 				2CF096781DBD9346006856CF /* Assets.xcassets */,
 				2CF0967A1DBD9346006856CF /* LaunchScreen.storyboard */,
@@ -126,6 +152,14 @@
 				2CF096931DBD9346006856CF /* Info.plist */,
 			);
 			path = MSSE652UITests;
+			sourceTree = "<group>";
+		};
+		2CF0969F1DBD997C006856CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8391A1DC2BE35008FBA8E /* Program.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,16 +230,18 @@
 				TargetAttributes = {
 					2CF0966A1DBD9346006856CF = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = AGT3N84LPR;
+						LastSwiftMigration = 0810;
 					};
 					2CF096811DBD9346006856CF = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = AGT3N84LPR;
+						LastSwiftMigration = 0810;
 						TestTargetID = 2CF0966A1DBD9346006856CF;
 					};
 					2CF0968C1DBD9346006856CF = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = AGT3N84LPR;
+						LastSwiftMigration = 0810;
 						TestTargetID = 2CF0966A1DBD9346006856CF;
 					};
 				};
@@ -262,9 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB8391D1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift in Sources */,
+				2C24F6291DC390250059188E /* CoursesTableViewController.swift in Sources */,
 				2CF096711DBD9346006856CF /* ViewController.swift in Sources */,
 				2CF0966F1DBD9346006856CF /* AppDelegate.swift in Sources */,
+				2CB8391B1DC2BE35008FBA8E /* Program.swift in Sources */,
+				2C24F6271DC38FBB0059188E /* CourseDetailViewController.swift in Sources */,
 				2CF096771DBD9346006856CF /* MSSE652.xcdatamodeld in Sources */,
+				2CF096A81DBD9A7C006856CF /* SecondViewController.swift in Sources */,
+				2CF096A61DBD9A6B006856CF /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,10 +448,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MSSE652/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evans.cs193p.MSSE652;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -417,10 +461,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MSSE652/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evans.cs193p.MSSE652;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -432,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evans.cs193p.MSSE652Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSSE652.app/MSSE652";
 			};
 			name = Debug;
@@ -444,6 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evans.cs193p.MSSE652Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSSE652.app/MSSE652";
 			};
 			name = Release;
@@ -455,6 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evans.cs193p.MSSE652UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MSSE652;
 			};
 			name = Debug;
@@ -466,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evans.cs193p.MSSE652UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MSSE652;
 			};
 			name = Release;
@@ -489,6 +539,7 @@
 				2CF096981DBD9346006856CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CF096991DBD9346006856CF /* Build configuration list for PBXNativeTarget "MSSE652Tests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +548,7 @@
 				2CF0969B1DBD9346006856CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CF0969C1DBD9346006856CF /* Build configuration list for PBXNativeTarget "MSSE652UITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +557,7 @@
 				2CF0969E1DBD9346006856CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
