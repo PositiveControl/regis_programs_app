@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C04A4501DCFF3AD00179C95 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C04A44F1DCFF3AD00179C95 /* Course.swift */; };
 		2C24F6271DC38FBB0059188E /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */; };
-		2C24F6291DC390250059188E /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F6281DC390250059188E /* CoursesTableViewController.swift */; };
 		2C24F62B1DC393810059188E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62A1DC393810059188E /* ChatViewController.swift */; };
 		2C24F62D1DC393AD0059188E /* SuggestionBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62C1DC393AD0059188E /* SuggestionBoxViewController.swift */; };
 		2C24F62F1DC393D80059188E /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62E1DC393D80059188E /* SharingViewController.swift */; };
 		2CB8391B1DC2BE35008FBA8E /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8391A1DC2BE35008FBA8E /* Program.swift */; };
 		2CB8391D1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */; };
+		2CE236241DD00FEB00440BC2 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE236231DD00FEB00440BC2 /* CoursesTableViewController.swift */; };
 		2CF0966F1DBD9346006856CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0966E1DBD9346006856CF /* AppDelegate.swift */; };
 		2CF096711DBD9346006856CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF096701DBD9346006856CF /* ViewController.swift */; };
 		2CF096741DBD9346006856CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF096721DBD9346006856CF /* Main.storyboard */; };
@@ -44,13 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C04A44F1DCFF3AD00179C95 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
-		2C24F6281DC390250059188E /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 		2C24F62A1DC393810059188E /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2C24F62C1DC393AD0059188E /* SuggestionBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionBoxViewController.swift; sourceTree = "<group>"; };
 		2C24F62E1DC393D80059188E /* SharingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
 		2CB8391A1DC2BE35008FBA8E /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsTableTableViewController.swift; sourceTree = "<group>"; };
+		2CE236231DD00FEB00440BC2 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 		2CF0966B1DBD9346006856CF /* MSSE652.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSSE652.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF0966E1DBD9346006856CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CF096701DBD9346006856CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,10 +104,10 @@
 				2CF096701DBD9346006856CF /* ViewController.swift */,
 				2CB8391C1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift */,
 				2C24F6261DC38FBB0059188E /* CourseDetailViewController.swift */,
-				2C24F6281DC390250059188E /* CoursesTableViewController.swift */,
 				2C24F62A1DC393810059188E /* ChatViewController.swift */,
 				2C24F62C1DC393AD0059188E /* SuggestionBoxViewController.swift */,
 				2C24F62E1DC393D80059188E /* SharingViewController.swift */,
+				2CE236231DD00FEB00440BC2 /* CoursesTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -133,9 +135,9 @@
 		2CF0966D1DBD9346006856CF /* MSSE652 */ = {
 			isa = PBXGroup;
 			children = (
+				2C24F6251DC38F6E0059188E /* Controller */,
 				2CF0969F1DBD997C006856CF /* Model */,
 				2CF0966E1DBD9346006856CF /* AppDelegate.swift */,
-				2C24F6251DC38F6E0059188E /* Controller */,
 				2CF096721DBD9346006856CF /* Main.storyboard */,
 				2CF096781DBD9346006856CF /* Assets.xcassets */,
 				2CF0967A1DBD9346006856CF /* LaunchScreen.storyboard */,
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB8391A1DC2BE35008FBA8E /* Program.swift */,
+				2C04A44F1DCFF3AD00179C95 /* Course.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -307,8 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C04A4501DCFF3AD00179C95 /* Course.swift in Sources */,
 				2CB8391D1DC2C0F8008FBA8E /* ProgramsTableTableViewController.swift in Sources */,
-				2C24F6291DC390250059188E /* CoursesTableViewController.swift in Sources */,
 				2CF096711DBD9346006856CF /* ViewController.swift in Sources */,
 				2CF0966F1DBD9346006856CF /* AppDelegate.swift in Sources */,
 				2CB8391B1DC2BE35008FBA8E /* Program.swift in Sources */,
@@ -318,6 +321,7 @@
 				2C24F62D1DC393AD0059188E /* SuggestionBoxViewController.swift in Sources */,
 				2CF096A81DBD9A7C006856CF /* SecondViewController.swift in Sources */,
 				2C24F62B1DC393810059188E /* ChatViewController.swift in Sources */,
+				2CE236241DD00FEB00440BC2 /* CoursesTableViewController.swift in Sources */,
 				2CF096A61DBD9A6B006856CF /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

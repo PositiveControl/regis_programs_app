@@ -11,6 +11,7 @@ import UIKit
 class ProgramsTableTableViewController: UITableViewController {
 
     var programs = [Program]()
+    var selectedProgram: Program = Program()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,6 +99,14 @@ class ProgramsTableTableViewController: UITableViewController {
         cell.textLabel?.text = programs[indexPath.row].name
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("Entering didSelectRowAtIndexPath row \(indexPath.row)")
+        selectedProgram = programs[indexPath.row]
+        NSLog("selectedProgram: \(selectedProgram.toString())")
+        performSegue(withIdentifier: "SegueToCourses", sender: self)
+        NSLog("exiting didSelectRowAtIndexPath row #\(indexPath.row)!")
+    }
  
 
     /*
@@ -135,14 +144,25 @@ class ProgramsTableTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        NSLog("entering prepareForSegue")
+        
+        if segue.identifier == "SegueToCourses" {
+            NSLog("SegueToCourses")
+            
+            let destination = segue.destination as? CoursesTableViewController
+            
+            destination?.selectedProgram = selectedProgram
+            
+            NSLog("selectedProgram: \(selectedProgram.toString())")
+            NSLog("selectedProgram: \(destination?.selectedProgram.toString())")
+        }
+        NSLog("exiting prepareForSegue")
     }
-    */
+ 
 
 }
