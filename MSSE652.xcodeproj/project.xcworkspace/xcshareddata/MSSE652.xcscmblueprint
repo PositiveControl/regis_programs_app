@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9FEE18EF1BDE44035B0576CBC1FDF49F97FA7AEF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9FEE18EF1BDE44035B0576CBC1FDF49F97FA7AEF" : 9223372036854775807,
+    "67620B5EFA902936DF04070AF595B76AB0333747" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "67750EA6-1577-4151-8EE8-C2D43EABED06",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9FEE18EF1BDE44035B0576CBC1FDF49F97FA7AEF" : "MSSE652\/",
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "MSSE652\/Alamofire\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MSSE652",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MSSE652.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:PositiveControl\/regis_programs_app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9FEE18EF1BDE44035B0576CBC1FDF49F97FA7AEF"
+    }
+  ]
+}

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CoursesTableViewController: UITableViewController {
     
@@ -16,8 +17,7 @@ class CoursesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        nsurlSession()
+        processRequest()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,57 +26,36 @@ class CoursesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    func nsurlSession() {
-        let requestURL: NSURL = NSURL(string: "http://www.ccis.site/Regis2/Courses?programId=\(selectedProgram.id)")!
-        
-        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: requestURL as URL)
-        
-        let session = URLSession.shared
-        
-        let task = session.dataTask(with: urlRequest as URLRequest) {
-            (data, response, error) -> Void in
-            
-            let httpResponse = response as! HTTPURLResponse
-            let statusCode = httpResponse.statusCode
-            
-            if (statusCode == 200) {
-                print("200 OK")
+    func processRequest() {
+        Alamofire
+            .request("http://www.ccis.site/Regis2/Courses?programId=\(selectedProgram.id)")
+            .responseJSON {
+                response in
                 
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String: AnyObject]
-                    print(json)
+                if let value = response.result.value {
+                    print("JSON: \(value)")
                     
-                    if let courses = json["courses"] as? [[String: AnyObject]] {
-                        print(courses)
-                        
-                        for course in courses {
-                            if let id = course["id"] as? String {
-                                if let name = course["name"] as? String {
-                                    print(id, name)
-                                    let acourse = Course()
-                                    acourse.id = Int(id)!
-                                    acourse.name = name
-                                    self.courses.append(acourse)
-                                }
-                            }
-                        }
+                    let dictionary = value as! NSDictionary
+                    print("DICT: \(dictionary)")
+                    
+                    let courses = dictionary["courses"] as! NSArray
+                    print("COURSES: \(courses)")
+                    
+                    for course in courses as! [Dictionary<String, AnyObject>] {
+                        let name = course["name"] as! String
+                        let id = course["id"] as! String
+                        let acourse = Course()
+                        acourse.id = Int(id)!
+                        acourse.name = name
+                        self.courses.append(acourse)
                     }
-                } catch {
-                    print("Error with JSON: \(error)")
-                }
-                
-                DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
-                    // Bounce back to the main thread to update the UI
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
+                    
                 }
-                
-            }
         }
-        task.resume()
     }
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

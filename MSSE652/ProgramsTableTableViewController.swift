@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ProgramsTableTableViewController: UITableViewController {
 
@@ -16,7 +17,7 @@ class ProgramsTableTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nsurlSession()
+        processRequest()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,57 +26,37 @@ class ProgramsTableTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    func nsurlSession() {
-        let requestURL: NSURL = NSURL(string: "http://www.ccis.site/Regis2/Programs")!
-        
-        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: requestURL as URL)
-        
-        let session = URLSession.shared
-        
-        let task = session.dataTask(with: urlRequest as URLRequest) {
-            (data, response, error) -> Void in
+    func processRequest() {
+        Alamofire
+            .request("http://www.ccis.site/Regis2/Programs")
+            .responseJSON {
+                response in
             
-            let httpResponse = response as! HTTPURLResponse
-            let statusCode = httpResponse.statusCode
-            
-            if (statusCode == 200) {
-                print("200 OK")
+                if let value = response.result.value {
+                    print("JSON: \(value)")
                 
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String: AnyObject]
-                    print(json)
-                    
-                    if let programs = json["programs"] as? [[String: AnyObject]] {
-                        print(programs)
-                        
-                        for program in programs {
-                            if let id = program["id"] as? String {
-                                if let name = program["name"] as? String {
-                                    print(id, name)
-                                    let aprogram = Program()
-                                    aprogram.id = Int(id)!
-                                    aprogram.name = name
-                                    self.programs.append(aprogram)
-                                }
-                            }
-                        }
+                    let dictionary = value as! NSDictionary
+                    print("DICT: \(dictionary)")
+                
+                    let programs = dictionary["programs"] as! NSArray
+                    print("PROGRAMS: \(programs)")
+                
+                    for program in programs as! [Dictionary<String, AnyObject>] {
+                        let name = program["name"] as! String
+                        let id = program["id"] as! String
+                        let aprogram = Program()
+                        aprogram.id = Int(id)!
+                        aprogram.name = name
+                        self.programs.append(aprogram)
                     }
-                } catch {
-                    print("Error with JSON: \(error)")
-                }
-                
-                DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
-                    // Bounce back to the main thread to update the UI
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
-                }
-            
+          
             }
         }
-        task.resume()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
