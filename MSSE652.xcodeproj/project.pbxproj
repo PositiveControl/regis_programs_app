@@ -12,6 +12,7 @@
 		2C24F62B1DC393810059188E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62A1DC393810059188E /* ChatViewController.swift */; };
 		2C24F62D1DC393AD0059188E /* SuggestionBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62C1DC393AD0059188E /* SuggestionBoxViewController.swift */; };
 		2C24F62F1DC393D80059188E /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24F62E1DC393D80059188E /* SharingViewController.swift */; };
+		2C5EC1771DE294C000A90B1C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5EC1761DE294C000A90B1C /* Social.framework */; };
 		2C9A01D71DD91C88006C1AB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A01CA1DD91C14006C1AB1 /* Alamofire.framework */; };
 		2C9A01D81DD91C88006C1AB1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A01CA1DD91C14006C1AB1 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C9A01DE1DD91FBD006C1AB1 /* RequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A01DD1DD91FBD006C1AB1 /* RequestHelper.swift */; };
@@ -123,6 +124,7 @@
 		2C24F62A1DC393810059188E /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2C24F62C1DC393AD0059188E /* SuggestionBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionBoxViewController.swift; sourceTree = "<group>"; };
 		2C24F62E1DC393D80059188E /* SharingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
+		2C5EC1761DE294C000A90B1C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		2C9A01BE1DD91C13006C1AB1 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		2C9A01DD1DD91FBD006C1AB1 /* RequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHelper.swift; sourceTree = "<group>"; };
 		2CB8391A1DC2BE35008FBA8E /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5EC1771DE294C000A90B1C /* Social.framework in Frameworks */,
 				2C9A01D71DD91C88006C1AB1 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +191,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		2C5EC1751DE294C000A90B1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C5EC1761DE294C000A90B1C /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2C9A01BF1DD91C13006C1AB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +229,7 @@
 				2CF096851DBD9346006856CF /* MSSE652Tests */,
 				2CF096901DBD9346006856CF /* MSSE652UITests */,
 				2CF0966C1DBD9346006856CF /* Products */,
+				2C5EC1751DE294C000A90B1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

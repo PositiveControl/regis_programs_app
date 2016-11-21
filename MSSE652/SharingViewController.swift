@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import Social
 
 class SharingViewController: UIViewController {
 
+    @IBAction func shareOnFacebook(_ sender: Any) {
+        print("entering shareOnFacebook")
+        
+        let shareOnFacebook: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        self.present(shareOnFacebook, animated: true, completion: nil)
+        print("exiting shareOnFacebook")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
